@@ -15,9 +15,14 @@
 		<!-- responsive tabs -->
 		<link type="text/css" rel="stylesheet" href="css/responsive-tabs.css" />
 		<!-- home slider-->
-		<link href="css/pgwslider.css" rel="stylesheet">
+
 		<link href="style.css" rel="stylesheet" media="screen">	
-		<link href="responsive.css" rel="stylesheet" media="screen">		
+	
+
+
+  
+      	<link rel="stylesheet" href="logon-css/logon.css">
+	
 	</head>
 
 	<body>
@@ -56,7 +61,7 @@
 								</ul>
 							</li>
 							<li><a href="contact.html">Help</a></li>
-							<li><a href="logon.html">Log&nbsp;&nbsp;&nbsp;On</a></li>
+							<li><a h href="logon.html">Log&nbsp;&nbsp;&nbsp;On</a></li>
 
 						</ul>
 					</div>
@@ -66,264 +71,99 @@
 		
 
 
-		<div class="fix main_content_area">
-			<div class="fix centre main_content">
-				<div class="fix home_content floatleft">
-				
-				
-					<div class="slider fix">
-					
-						<ul class="pgwSlider">
-							<li><img src="images/210x100.gif" alt="Free Trial!" data-large-src="images/622x250.gif" data-description="Sign up today to begin your free 1 month trial"/></li>
-							<li>
-								<img src="images/redsmall.png" data-large-src="images/money.jpg">
-								<span>Join The Club Today and Start Saving!</span>
-							</li>
+		<div class="form">
+      
+      <ul class="tab-group">
+        <li class="tab active"><a href="#signup">Sign Up</a></li>
+        <li class="tab"><a href="#login">Log In</a></li>
+      </ul>
+      
+      <div class="tab-content">
+        <div id="signup">   
+          <h1>Sign Up for Free</h1>
+          
+          <form action="/" method="post">
+          
+          <div class="top-row">
+            <div class="field-wrap">
+              <label>
+                First Name<span class="req">*</span>
+              </label>
+              <input type="text" required autocomplete="off" />
+            </div>
+        
+            <div class="field-wrap">
+              <label>
+                Last Name<span class="req">*</span>
+              </label>
+              <input type="text"required autocomplete="off"/>
+            </div>
+          </div>
 
+          <div class="field-wrap">
+            <label>
+              Email Address<span class="req">*</span>
+            </label>
+            <input type="email"required autocomplete="off"/>
+          </div>
+          
+          <div class="field-wrap">
+            <label>
+              Set A Password<span class="req">*</span>
+            </label>
+            <input type="password"required autocomplete="off"/>
+          </div>
+          
+          <button type="submit" class="button button-block"/>Get Started</button>
+          
+          </form>
 
-						</ul>
-						
-					</div> <!-- End slider area-->
-					
-					<div class="fix single_home_content">
-						<div class="fix single_home_content_container">
-							<h2><i class="fa fa-angle-double-down"></i> Sponsored Coupons <a href="">See all <i class="fa fa-angle-double-right"></i></a></h2>
-							<div class="fix single_content floatleft">
-								<img src="images/ex/jeans.jpg"/>
-								<h2><a href="single.html">Levi's Jeans</a></h2>
-								<div class="rating">
-									<ul>
-										<li><a href=""></a></li>
-										<li><a href=""></a></li>
-										<li><a href=""></a></li>
-										<li><a href=""></a></li>
-										<li><a href=""></a></li>
-									</ul>
-								</div>
-								<div class="home_download">
-									<a href="single.html">View</a>
-								</div>
-								
-								
-							</div>
-							
-							<div class="fix single_content floatleft">
-								<img src="images/ex/pizza.png"/>
-								<h2>Pizza Hut</h2>
-								<div class="rating">
-									<ul>
-										<li><a href=""></a></li>
-										<li><a href=""></a></li>
-										<li><a href=""></a></li>
-										<li><a href=""></a></li>
-										<li><a href=""></a></li>
-									</ul>
-								</div>
-								<div class="home_download">
-									<a href="single.html">View</a>
-								</div>
-								
-								
-							</div>
-							
-				
-							
-							<div class="fix single_content floatleft">
-								<img src="images/ex/oj.png" height="97.97px width100px" />
-								<h2>Original Joe's</h2>
-								<div class="rating">
-									<ul>
-										<li><a href=""></a></li>
-										<li><a href=""></a></li>
-										<li><a href=""></a></li>
-										<li><a href=""></a></li>
-										<li><a href=""></a></li>
-									</ul>
-								</div>
-								<div class="home_download">
-									<a href="single.html">View</a>
-								</div>
-								
-								
-							</div>
-							
+        </div>
+        
+        <div id="login">   
+          <h1>Welcome Back!</h1>
+          
+          <form action="/" method="post">
+          
+            <div class="field-wrap">
+            <label>
+              Email Address<span class="req">*</span>
+            </label>
+            <input type="email"required autocomplete="off"/>
+          </div>
+          
+          <div class="field-wrap">
+            <label>
+              Password<span class="req">*</span>
+            </label>
+            <input type="password"required autocomplete="off"/>
+          </div>
+          
+          <p class="forgot"><a href="#">Forgot Password?</a></p>
+          
+          <button class="button button-block"/>Log In</button>
+          
+          </form>
 
+        </div>
+        
+      </div><!-- tab-content -->
+      
+</div> <!-- /form -->
+  <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
 
-						</div>
-					</div>
-					
-					
-					<div class="fix single_home_content">
-						<div class="fix single_home_content_container">
-							<h2><i class="fa fa-angle-double-down"></i> Top Coupons<a href="">See all <i class="fa fa-angle-double-right"></i></a></h2>
-							<div class="fix single_content floatleft">
-								<img src="images/ex/coupon1.jpg"/>
-								<h2>Atlantis H.</h2>
-								<div class="rating">
-									<ul>
-										<li><a href=""></a></li>
-										<li><a href=""></a></li>
-										<li><a href=""></a></li>
-										<li><a href=""></a></li>
-										<li><a href=""></a></li>
-									</ul>
-								</div>
-								<div class="home_download">
-									<a href="single.html">View</a>
-									<br>
-								</div>
-								
-								
-							</div>
-							
-							<div class="fix single_content floatleft">
-								<img src="images/ex/timmys.gif"/>
-								<h2>Tim Hortons</h2>
-								<div class="rating">
-									<ul>
-										<li><a href=""></a></li>
-										<li><a href=""></a></li>
-										<li><a href=""></a></li>
-										<li><a href=""></a></li>
-										<li><a href=""></a></li>
-									</ul>
-								</div>
-								<div class="home_download">
-									<a href="single.html">View</a>
-								</div>
-								
-							</div>
+    <script src="logon-js/logon.js"></script>
 
-							<div class="fix single_content floatleft">
-								<img src="images/ex/apps.jpg"/>
-								<h2>Coupon</h2>
-								<div class="rating">
-									<ul>
-										<li><a href=""></a></li>
-										<li><a href=""></a></li>
-										<li><a href=""></a></li>
-										<li><a href=""></a></li>
-										<li><a href=""></a></li>
-									</ul>
-								</div>
-								<div class="home_download">
-									<a href="single.html">View</a>
-								</div>
-						</div>
-
-							<div class="fix single_content floatleft">
-								<img src="images/ex/apps.jpg"/>
-								<h2>Coupon</h2>
-								<div class="rating">
-									<ul>
-										<li><a href=""></a></li>
-										<li><a href=""></a></li>
-										<li><a href=""></a></li>
-										<li><a href=""></a></li>
-										<li><a href=""></a></li>
-									</ul>
-								</div>
-								<div class="home_download">
-									<a href="single.html">View</a>
-								</div>
-					</div>
-
-<div class="fix single_content floatleft">
-								<img src="images/ex/apps.jpg"/>
-								<h2>Coupon</h2>
-								<div class="rating">
-									<ul>
-										<li><a href=""></a></li>
-										<li><a href=""></a></li>
-										<li><a href=""></a></li>
-										<li><a href=""></a></li>
-										<li><a href=""></a></li>
-									</ul>
-								</div>
-								<div class="home_download">
-									<a href="single.html">View</a>
-								</div>
-					
-						</div>
-					</div>
-
-</div>				</div> <!-- End home content-->
-				<div class="fix home_content_sidebar floatright">
-				
-				
-				
-					<div class="home_single_sidebar">
-						<h2><i class="fa fa-bars"></i> Ads</h2>
-
-							<div class="home_sidebar_apps">
-								<a href=""><img src="images/pantene.png" alt="ad1"/ width="240px" height="240px"></a>
-								<h3><a href="">Pantene</a></h3>
-							</div>
-							<div class="home_sidebar_apps">
-								<a href=""><img src="images/mcdonalds.png" alt="ad2"/ width="240px" height="240px"></a>
-								<h3><a href="">Mcdonald's</a></h3>
-							</div>
-							<div class="home_sidebar_apps">
-								<a href=""><img src="images/telus.png" alt="ad3" / width="240px" height="240px"></a>
-								<h3><a href="">Clear</a></h3>
-							</div>
-							<div class="home_sidebar_apps">
-								<a href=""><img src="images/law.png" alt=""/></a>
-								<h3><a href="">Paul P Law</a></h3>
-							</div>
-
-
-					</div>
-					
-			
-
-				</div> <!-- End home sidebar-->
-			</div>
-		</div> <!-- End main content-->
 		<div class="fix footer_top_area">
 			<div class="fix centre footer_top">
-				<div class="fix single_footer_top_container">
-					<div class="fix single_footer_top floatleft">
-						<h2>Subscribe us</h2>
-						<p id="subscribe-text">Run your ad on our pay per click advertising network
-	and start receiving new targeted</p>
-						<form>
-							<p id="subscribe-email"><input type="text" id="subscribe-field" placeholder="Email Address"/></p>
-							<p id="subscribe-submit"><input type="submit" value="Submit"/></p>
-						</form>
-					</div>
-					<div class="fix single_footer_top floatleft">
-						<h2>Text widget</h2>
-						<p>Run your ad on our pay per click advertising network
-	and start receiving new targeted</p>
-	<p>Run your ad on our pay per click advertising network
-	and start receiving new targeted and easy-to-convert
-	prospects in less than 10 minutes:</p>
-					</div>
-					<div class="fix single_footer_top floatleft">
-						<h2>Twitter widget</h2>
-						<p>Run your ad on our pay per click advertising network
-	and start receiving new targeted</p>
-	<p>Run your ad on our pay per click advertising network
-	and start receiving new targeted and easy-to-convert
-	prospects in less than 10 minutes:</p>
-					</div>
-					<div class="fix single_footer_top floatleft">
-						<h2>Twitter widget</h2>
-						<p>Run your ad on our pay per click advertising network
-	and start receiving new targeted</p>
-	<p>Run your ad on our pay per click advertising network
-	and start receiving new targeted and easy-to-convert
-	prospects in less than 10 minutes:</p>
-				</div>
-			</div> 
+				<p> Unbeatable Deals for local consumers, <i>Coupon Club</i> is an easy way to get discounts while discovering fun activities in your city. Our daily local deals consist of restaurants, beauty, travel, ticket vouchers, shopping vouchers, hotels, and a whole lot more.
+						<br>
+						<br>© 2017 Coupon Club, Inc. All Rights Reserved.</p>
 			</div>
 		</div><!-- End footer top area-->
 		<div class="fix footer_bottom_area">
 			<div class="fix centre footer_bottom">
-				<div class="fix copyright floatleft">
-					<p>Designed by WpFreeware.com</p>
-				</div>
+	
 				<div class="fix footer_menu floatright">
 					<ul>
 						<li><a href="welcome.html">Home</a></li>
